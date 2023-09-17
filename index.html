@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="search">
+        <nav class="search-bar">
+            <ul  class="movieList">
+                <button  id="home" class="movieBtn"><a  href="index.html">Home</a></button>
+                <button  class="movieBtn"><a id="movies" href="#">Movies<span class="uni">&#9660</span></a></button>
+                <div class="movieHov" style="visibility: hidden;">
+                    <ul id="movieGen" class="movieGenre">
+                        <a href="" id="28" class="genres ">Action</a>
+                        <a href="" id="16" class="genres">Anime</a>
+                        <a href="" id="35"class="genres">Comedies</a>
+                        <a href="" id="80"class="genres">Crime</a>
+                        <a href="" id="18"class="genres">Dramas</a>
+                        <a href="" id="27"class="genres">Horror</a>
+                        <a href="" id="10751"class="genres">Kids</a>
+                        <a href="" id="10749"class="genres">Romance</a>
+                        <a href="" id="878"class="genres">Sci-Fi</a>
+                        <a href="" id="53"class="genres">Thriller</a>
+                    </ul>
+                </div>
+                <div class="tvHov " style="visibility: hidden;">
+                    <ul class="tvGenre">
+                        <a href="" id="10759" class="tvgenres ">Action</a>
+                        <a href="" id="16" class="tvgenres">Anime</a>
+                        <a href="" id="35"class="tvgenres">Comedies</a>
+                        <a href="" id="80"class="tvgenres">Crime</a>
+                        <a href="" id="18"class="tvgenres">Dramas</a>
+                        <a href="" id="10751"class="tvgenres">Family</a>
+                        <a href="" id="10762"class="tvgenres">Kids</a>
+                        <a href="" id="10764"class="tvgenres">Reality</a>
+                        <a href="" id="10765"class="tvgenres">Sci-Fi</a>
+                        <a href="" id="10766"class="tvgenres">Soap</a>
+                    </ul>
+                </div>
+                <button class="movieBtn"><a id="tvshow" href="#">Tv<span class="uni tv">&#9660</span></a></button>
+               
+            </ul>
+            <div class="search-wrapper">
+                <input id="search-input" type="text" placeholder="Search...">
+                <span id="searchBtn"><i class="fa-solid fa-magnifying-glass fa-2xl"></i></span>
+            </div>
+            <div class="hamburger">
+                <i id="ham" class="fa-solid fa-bars"></i>
+            </div>
+            <ul  class="movieListMobile">
+                <button  class="movieBtnMobile"><a id="homeMobile" href="index.html">Home</a></button>
+                <button  class="movieBtnMobile"><a id="moviesMobile" href="#">Movies<span class="uni">&#9660</span></a></button>
+                <div id= "movieHovMobile"class="movieHovMobile" >
+                    <ul id="movieGenMobile" class="movieGenre">
+                        <a href="" id="28" class="genres ">Action</a>
+                        <a href="" id="16" class="genres">Anime</a>
+                        <a href="" id="35"class="genres">Comedies</a>
+                        <a href="" id="80"class="genres">Crime</a>
+                        <a href="" id="18"class="genres">Dramas</a>
+                        <a href="" id="27"class="genres">Horror</a>
+                        <a href="" id="10751"class="genres">Kids</a>
+                        <a href="" id="10749"class="genres">Romance</a>
+                        <a href="" id="878"class="genres">Sci-Fi</a>
+                        <a href="" id="53"class="genres">Thriller</a>
+                    </ul>
+                </div>
+
+                <button class="movieBtnMobile"><a id="tvshowMobile" href="#">Tv<span class="uni tv">&#9660</span></a></button>
+                <div id="tvHovMobile" class="tvHovMobile" >
+                    <ul  class="tvGenreMobile tvGenre">
+                        <a href="" id="10759" class="tvgenres ">Action</a>
+                        <a href="" id="16" class="tvgenres">Anime</a>
+                        <a href="" id="35"class="tvgenres">Comedies</a>
+                        <a href="" id="80"class="tvgenres">Crime</a>
+                        <a href="" id="18"class="tvgenres">Dramas</a>
+                        <a href="" id="10751"class="tvgenres">Family</a>
+                        <a href="" id="10762"class="tvgenres">Kids</a>
+                        <a href="" id="10764"class="tvgenres">Reality</a>
+                        <a href="" id="10765"class="tvgenres">Sci-Fi</a>
+                        <a href="" id="10766"class="tvgenres">Soap</a>
+                    </ul>
+                </div>
+            </ul>
+        </nav>
+    </section>
+    <section class="popular">
+        <div id="popular-movies">
+
+        </div>
+        <div  class="action posterGrid">
+
+        </div>
+        <div class="tvshows posterGrid"></div>
+        <div  class="search-results posterGrid"></div>
+    </section>
+    <script  src ='index.js'></script>
+    <script src = 'mobile.js'></script>
+
+</body>
+
+</html>
